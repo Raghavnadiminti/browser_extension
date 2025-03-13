@@ -37,7 +37,7 @@ let pageCleanedText = extractCleanTextFromHTML();
 console.log("Cleaned Text Content: ", pageCleanedText);
                                       
 
-const PERSPECTIVE_API_URL = 'https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=AIzaSyD1OWTbfgy6tOlRMVn3mhmwh-MnbzE8H6s';
+const PERSPECTIVE_API_URL = 'https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=';
 
 
 async function analyzeToxicity(text) {
