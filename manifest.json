@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Toxicity Detector",
+    "version": "1.0.0",
+    "permissions": [
+      "scripting",  
+      "activeTab"   
+    ],
+    "host_permissions": [
+      "*://*/*" 
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "index.html"
+    }
+  }
+  
