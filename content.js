@@ -111,8 +111,8 @@ const textChunks = splitTextIntoChunks(pageCleanedText, MAX_TEXT_BYTES);
 
 
 async function analyzeAllChunks(chunks) {
-  for (const chunk of chunks) {
-    await analyzeToxicity(chunk);
+  for (const cunk of chunks) {
+    await analyzeToxicity(cunk);
   }
 }
 
